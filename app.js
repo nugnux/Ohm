@@ -45,7 +45,7 @@ async function connectESP32BLE() {
     if (connectBtn) connectBtn.textContent = 'Connecting...';
 
     const device = await navigator.bluetooth.requestDevice({
-      filters: [{ name: 'ESP32_Ohm_INA' }],
+      filters: [{ name: 'Hk_Ohm' }],
       optionalServices: [SERVICE_UUID]
     });
 
